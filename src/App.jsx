@@ -1,9 +1,9 @@
-import Profile from './components/Profile';
-import Statistics from 'components/Statistics';
-import ItemList from 'components/ItemList';
-import Section from 'components/Section';
-import FriendList from 'components/FriendList';
-import TransactionHistory from 'components/TransactionHistory ';
+import Profile from './components/Profile/Profile';
+import Statistics from 'components/Statistics/Statistics';
+import ItemList from 'components/Statistics/ItemList';
+import Section from 'components/Section/Section';
+import FriendList from 'components/Friends/FriendList';
+import TransactionHistory from 'components/Transaction/TransactionHistory ';
 import user from './data/user.json';
 import data from './data/data.json';
 import friends from './data/friends.json';
@@ -23,7 +23,7 @@ export const App = () => {
     </Section>
       
     <Section title={'2- Секция статистики'}>
-      <Statistics  title="Upload stats">
+        <Statistics title="Upload stats">
         <ItemList items={data}/>
       </Statistics>  
     </Section>  

@@ -19,9 +19,14 @@ function FriendList({ friends }) {
     );
  }
 FriendList.propTypes = {
-    id: PropTypes.string.isRequired,
-    isOnline: PropTypes.bool.isRequired,
-    avatar: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
+    friends: PropTypes.arrayOf(
+        PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        isOnline: PropTypes.bool.isRequired,
+        name: PropTypes.string.isRequired,
+        avatar: PropTypes.string.isRequired,
+        })
+    )
+    
 };
 export default FriendList;
